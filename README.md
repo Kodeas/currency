@@ -1,6 +1,7 @@
 
-# A simple currency cast for Laravel
+![currency](https://user-images.githubusercontent.com/56773461/169656521-7f61df41-aaf6-4252-a18b-427fce6688a3.png)
 
+# A simple currency cast for Laravel
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/kodeas/currency.svg?style=flat-square)](https://packagist.org/packages/kodeas/currency)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodeas/currency/run-tests?label=tests)](https://github.com/kodeas/currency/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/kodeas/currency/Check%20&%20fix%20styling?label=code%20style)](https://github.com/kodeas/currency/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
