@@ -19,8 +19,8 @@ jobs:
         include:
           - laravel: 9.*
             testbench: 7.*
-            contracts: 9.0
-            php: 8.0
+            contracts: 9.*
+            php: 8.*
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
