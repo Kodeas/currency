@@ -1,14 +1,11 @@
 <?php
 
-
 namespace Kodeas\Currency\Casts;
-
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Database\Eloquent\Model;
 use Kodeas\Currency\Currency as CurrencyType;
 use Kodeas\Currency\Exceptions\InvalidCurrencyFormatException;
-
 
 class Currency implements CastsAttributes
 {
@@ -36,9 +33,10 @@ class Currency implements CastsAttributes
      */
     public function set($model, string $key, mixed $value, array $attributes): int
     {
-        if (!($value instanceof CurrencyType)) {
+        if (! ($value instanceof CurrencyType)) {
             $currency = CurrencyType::class;
             $type = getType($value);
+
             throw new InvalidCurrencyFormatException("The given value must be $currency. $type was given.");
         }
 
