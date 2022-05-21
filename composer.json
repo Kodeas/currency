@@ -1,6 +1,6 @@
 {
     "name": "kodeas/currency",
-    "description": "This is my package currency",
+    "description": "A simple currency cast for Laravel",
     "keywords": [
         "Kodeas",
         "laravel",
