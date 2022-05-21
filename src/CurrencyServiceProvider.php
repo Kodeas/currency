@@ -10,7 +10,6 @@ class CurrencyServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('currency')
-            ->hasMigration('create_test_model_table');
+            ->name('currency');
     }
 }
