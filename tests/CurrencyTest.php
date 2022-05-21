@@ -9,7 +9,7 @@ it('it casts from cents', function () {
 
     $model = TestModel::make([
         'amount_with_cast' => $amount,
-        'amount_without_cast' => 1
+        'amount_without_cast' => 1,
     ]);
 
     expect($model->amount_with_cast)
@@ -29,7 +29,7 @@ it('it casts from usd', function () {
 
     $model = TestModel::make([
         'amount_with_cast' => $amount,
-        'amount_without_cast' => 1
+        'amount_without_cast' => 1,
     ]);
 
     expect($model->amount_with_cast)
@@ -47,6 +47,6 @@ it('it casts from usd', function () {
 it('throws type exception', function () {
     $model = TestModel::make([
         'amount_with_cast' => 1,
-        'amount_without_cast' => 1
+        'amount_without_cast' => 1,
     ]);
 })->throws(InvalidCurrencyFormatException::class);
