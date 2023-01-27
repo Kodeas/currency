@@ -9,7 +9,6 @@ class CurrencyServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package
-            ->name('currency');
+        $package->name('currency');
     }
 }
